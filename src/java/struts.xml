@@ -1,0 +1,127 @@
+<!DOCTYPE struts PUBLIC
+"-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+"http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+    
+    <package name="default" extends="struts-default">
+
+        <action name="addUser" class="action.admin.addUser">
+            <result name="input">/admin/addUser.jsp</result>
+            <result name="success">/admin/addUser.jsp</result>
+        </action>
+
+        <action name="assignUser" class="action.admin.assignUser">
+            <result name="input">/admin/user_Assign.jsp</result>
+            <result name="success">/admin/user_Assign.jsp</result>
+        </action>
+        
+        <action name="viewUser" class="action.admin.viewUser">
+            <result name="input">/admin/viewUser.jsp</result>
+            <result name="success">/admin/viewUser.jsp</result>
+        </action>
+        
+        <action name="deleteUser" class="action.admin.viewUser" method="deleteUser" >
+            <result name="input">/admin/viewUser.jsp</result>
+            <result name="success">/admin/viewUser.jsp</result>
+        </action>
+        
+        <action name="updateUser" class="action.admin.viewUser" method="updateUser" >
+            <result name="input">/admin/viewUser.jsp</result>
+            <result name="success">/admin/viewUser.jsp</result>
+        </action>
+        
+        <action name="editUser" class="action.admin.viewUser" method="editUser" >
+            <result name="input">/admin/viewUser.jsp</result>
+            <result name="success">/admin/viewUser.jsp</result>
+        </action>
+        
+        
+        <action name="addInvoice" class="action.admin.addInvoice">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+        
+        <action name="viewInvoice" class="action.admin.addInvoice" method="viewInvoice">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+        
+        <action name="editInvoice" class="action.admin.addInvoice" method="editInvoice">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+        
+        <action name="updateInvoice" class="action.admin.addInvoice" method="updateInvoice">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+     
+        <action name="deleteInvoice" class="action.admin.addInvoice" method="deleteInvoice">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+
+        <action name="uploadUser" class="action.admin.uploadUser">
+            <result name="input">/admin/addInvoice.jsp</result>
+            <result name="success">/admin/addInvoice.jsp</result>
+        </action>
+        
+        <action name="addAssetEntry" class="action.admin.addAssetEntry">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getManagerByDomain" class="action.commonData.getDropDown" method="getManagerByDomain">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getEmployee" class="action.commonData.getDropDown" method="getEmployee">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getManager" class="action.commonData.getDropDown" method="getManager">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getEmployeeByManager" class="action.commonData.getDropDown" method="getEmployeeByManager">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+
+        <action name="getDetailsByEmployee" class="action.admin.addAssetEntry" method="getDetailsByEmployee">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+
+        <action name="getInvoiceNumber" class="action.commonData.getDropDown" method="getInvoiceNumber">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getSerialNoByInvoiceNo" class="action.commonData.getDropDown" method="getSerialNoByInvoiceNo">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>
+        
+        <action name="getDetailsBySerialNo" class="action.admin.addAssetEntry" method="getDetailsBySerialNo">
+            <result name="input">/admin/addAssetEntry.jsp</result>
+            <result name="success">/admin/addAssetEntry.jsp</result>
+        </action>        
+        
+
+
+                
+<!--        <action name="loginAction" class="action.login.loginClass">
+            <result name="input">/login.jsp</result>
+            <result name="error">/login.jsp</result>
+            <result name="Admin">/admin/admin_Dashboard.jsp</result>
+            <result name="User">/admin/user_Dashboard.jsp</result>
+            <result name="Reporting Manager">/admin/manager_Dashboard.jsp</result>
+            <result name="Other">/login.jsp</result>
+        </action> -->
+    </package>
+</struts>
